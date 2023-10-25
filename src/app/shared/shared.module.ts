@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { NoDataFoundComponent } from './components/no-data-found/no-data-found.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { NoSearchResultComponent } from './components/no-search-result/no-search-result.component';
-import { CurrentBalanceComponent } from './admin-components/current-balance/current-balance.component';
-import { PayPopUpComponent } from './components/popups/pay-pop-up/pay-pop-up.component';
-import { RefundPopupComponent } from './components/popups/refund-popup/refund-popup.component';
-import { ChargeDetailPopupComponent } from './components/popups/charge-detail-popup/charge-detail-popup.component';
-import { ChargePopupComponent } from './components/popups/charge-popup/charge-popup.component';
+import { CarouselModule } from "ngx-owl-carousel-o";
+import { CommonModule } from "@angular/common";
+import { CurrentBalanceComponent } from "./admin-components/current-balance/current-balance.component";
+import { NgModule } from "@angular/core";
+import { NoDataFoundComponent } from "./components/no-data-found/no-data-found.component";
+import { NoSearchResultComponent } from "./components/no-search-result/no-search-result.component";
+import { PayPopUpComponent } from "./components/popups/pay-pop-up/pay-pop-up.component";
+import { RouterModule } from "@angular/router";
+import { ChargeDetailPopupComponent } from "./components/popups/charge-detail-popup/charge-detail-popup.component";
+import { ChargePopupComponent } from "./components/popups/charge-popup/charge-popup.component";
+import { RefundPopupComponent } from "./components/popups/refund-popup/refund-popup.component";
 
 @NgModule({
   declarations: [
@@ -20,13 +20,7 @@ import { ChargePopupComponent } from './components/popups/charge-popup/charge-po
     ChargeDetailPopupComponent,
     ChargePopupComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule,
-    TranslateModule
-  ],
-  exports: [
-    CurrentBalanceComponent
-  ]
+  imports: [CommonModule, RouterModule, CarouselModule],
+  exports: [CurrentBalanceComponent, CarouselModule],
 })
 export class SharedModule { }
