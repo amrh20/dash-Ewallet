@@ -19,7 +19,8 @@
     .content {
         margin: 24px 0;
         max-height: 60vh;
-        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
         h1 {
             font-size: 35px;
             margin-bottom: -14px;

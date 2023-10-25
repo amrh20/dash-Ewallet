@@ -5,6 +5,8 @@
 
 .radio-label input[type="radio"] {
     display: none;
+    opacity: 0;
+    width: 0;
 }
 
 .radio-label img {
@@ -14,7 +16,7 @@
 }
 
 .radio-label input[type="radio"]:checked + img {
-    border: 1px solid blue;
+    border: 1px solid blue !important;
 }
 .visa-img {
     max-width: 60px;
