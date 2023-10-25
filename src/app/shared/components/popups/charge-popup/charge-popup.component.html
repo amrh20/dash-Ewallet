@@ -1,0 +1,132 @@
+<div class="popup-wrapper">
+  <ng-container *ngIf="firstOne">
+    <div class="content">
+      <div class="txt">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1>الرصيد الحالي</h1>
+            <div class="d-flex align-items-center">
+              <p>1,123,000,1542</p>
+              <span> ريال سعودي </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for=""> قيمة الشحن </label>
+              <input
+                type="text"
+                value="11111111111111111"
+                class="colored-input"
+              />
+              <div class="currency">ريال سعودي</div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="form-group">
+              <label for="">طريقة الدفع</label>
+            </div>
+
+            <label class="radio-label">
+              <input type="radio" name="radioGroup" value="option1" />
+              <img
+                src="../../../../../assets/images/visa.png"
+                alt="Option 1"
+                class="visa-img"
+              />
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="radioGroup" value="option2" />
+              <img
+                src="../../../../../assets/images/visa.png"
+                alt="Option 1"
+                class="visa-img"
+              />
+            </label>
+
+            <label class="radio-label">
+              <input type="radio" name="radioGroup" value="option3" />
+              <img
+                src="../../../../../assets/images/visa.png"
+                alt="Option 1"
+                class="visa-img"
+              />
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="actions">
+      <div class="d-flex justify-content-end">
+        <button class="primary-btn" (click)="gotonextStep()">إستكمال</button>
+
+        <button class="secondary-btn" (click)="closeModal()">إلغاء</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="secondOne">
+    <div class="content">
+      <div class="txt">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h1>الرصيد الحالي</h1>
+            <div class="d-flex align-items-center">
+              <p>1,123,000,1542</p>
+              <span> ريال سعودي </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">رقم البطاقة</label>
+              <input type="text" value="004111111111111111111" />
+              <div class="currency">
+                <img
+                  src="../../../../../assets/images/credit-card.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">الاسم بالبطاقة </label>
+              <input type="text" value="004111111111111111111" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">تاريخ الانتهاء </label>
+              <input type="text" value="004111111111111111111" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">CVV </label>
+              <input type="text" value="004111111111111111111" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="actions">
+      <div class="d-flex justify-content-end">
+        <button class="primary-btn" (click)="charge()">الدفع</button>
+
+        <button class="secondary-btn" (click)="closeModal()">إلغاء</button>
+      </div>
+    </div>
+  </ng-container>
+</div>

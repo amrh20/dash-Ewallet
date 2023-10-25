@@ -6,8 +6,10 @@
       <h1>الرصيد الحالي</h1>
       <p>1,123,000,1542</p>
       <div class="btns">
-        <button class="primary-btn">شحن المحفظة</button>
-        <button class="secondary-btn">إسترجاع أموال</button>
+        <button class="primary-btn" (click)="openCharge()">شحن المحفظة</button>
+        <button class="secondary-btn" (click)="openRefund()">
+          إسترجاع أموال
+        </button>
       </div>
     </div>
 

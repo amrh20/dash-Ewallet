@@ -15,7 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { IndexDashboardComponent } from './views/index-dashboard/index-dashboard.component';
 import { DashboardNavComponent } from './components/dashboard-nav/dashboard-nav.component';
 import { FinancialTransactionsComponent } from './views/financial-transactions/financial-transactions.component';
-import { ProfileComponent } from './views/profile/profile.component';
+import { ProfileComponent } from './views/index-dashboard/profile/profile.component';
 import { WalletComponent } from './views/wallet/wallet.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 

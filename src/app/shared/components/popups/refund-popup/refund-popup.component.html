@@ -1,0 +1,29 @@
+<div class="popup-wrapper">
+  <div class="content">
+    <form>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <label for=""> المبلغ المراد استرجاعه </label>
+            <input type="text" value="11111111111" class="colored-input" />
+            <div class="currency">ريال سعودي</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="hint-alert">
+            <span> ! </span>
+            <p>الرجاء العلم انه سيتم تحويل المبالغ إلى ايبان</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="actions">
+    <div class="d-flex justify-content-end">
+      <button class="primary-btn" (click)="refund()">تأكيد</button>
+
+      <button class="secondary-btn" (click)="closeModal()">إلغاء</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.radio-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio-label input[type="radio"] {
+    display: none;
+}
+
+.radio-label img {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+.radio-label input[type="radio"]:checked + img {
+    border: 1px solid blue;
+}
+.visa-img {
+    max-width: 60px;
+}
+
+.currency {
+    left: 10px !important;
+    img {
+        max-width: 50px;
+    }
+}

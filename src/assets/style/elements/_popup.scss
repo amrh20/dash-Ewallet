@@ -51,6 +51,28 @@
                 }
             }
         }
+        .hint-alert {
+            display: flex;
+            align-items: center;
+            p {
+                color: #e18342;
+                font-size: 22px;
+            }
+
+            span {
+                display: block;
+                background-color: #e18342;
+                color: #fff;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-inline-end: 20px;
+            }
+        }
 
         p {
             font-size: 40px;
@@ -127,13 +149,13 @@
         .form-group {
             .currency {
                 position: absolute;
-                top: 21px;
-                left: 16px;
-                color: #71767a;
-                font-size: 14px;
+                top: 45px;
+                left: 30px;
+                color: #75787b;
+                font-size: 18px;
                 [dir="ltr"] & {
                     left: unset;
-                    right: 16px;
+                    right: 20px;
                 }
             }
         }

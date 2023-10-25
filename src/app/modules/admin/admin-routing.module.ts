@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FinancialTransactionsComponent } from './views/financial-transactions/financial-transactions.component';
 import { IndexDashboardComponent } from './views/index-dashboard/index-dashboard.component';
-import { ProfileComponent } from './views/profile/profile.component';
+import { ProfileComponent } from './views/index-dashboard/profile/profile.component';
 import { WalletComponent } from './views/wallet/wallet.component';
 
 

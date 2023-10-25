@@ -1,7 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
-import { LogoutPopupComponent } from 'src/app/shared/components/popups/logout-popup/logout-popup.component';
 
 @Component({
   selector: 'app-dashboard-nav',
@@ -25,14 +24,7 @@ export class DashboardNavComponent {
 
   }
 
-  // logout
-  logout() {
-    const dialogRef = this.dialog.open(LogoutPopupComponent, {
-      width: '600px'
-    });
-    dialogRef.afterClosed().subscribe(result => {
-    });
-  }
+
 
   // notification
   viewDropNotifiations() {

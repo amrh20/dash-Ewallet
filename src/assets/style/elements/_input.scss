@@ -1,6 +1,7 @@
 @import "../../style/variables/variables";
 .form-group {
     margin-bottom: 12px;
+    position: relative;
     label {
         color: $primary-color;
         font-size: 18px;
@@ -19,5 +20,12 @@
         background: #f0f7f8 0% 0% no-repeat padding-box;
         border-radius: 15px;
         border: 0;
+    }
+    .currency {
+        position: absolute;
+        top: 47px;
+        left: 30px;
+        color: #75787b;
+        font-weight: bold;
     }
 }
